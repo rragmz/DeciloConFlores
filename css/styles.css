@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: url("/DeciloConFlores/images/flowers.jpg");
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+}
+.header-nav{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(32, 32, 32, 0.3);
+}
+
+.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+h1{
+    font-weight: 500;
+    font-size: 3rem;
+    margin-left: 3rem;
+}
+
+h1:hover{
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+li{
+    margin: 0% 25px 0% 25px;
+    position: relative;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+}
+li a:hover{
+    color: white;
+}
+
+li a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+li a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/*li a:hover{
+    font-size: 1.2rem;
+    color: white;
+}*/
+
+
+
+.content-header{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-header h2{
+    font-size: 4.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(253, 253, 253);
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 45px;
+}
+
+.comprar-ahora{
+    font-family: 'Montserrat', sans-serif;
+    width: 220px;
+    height: 55px;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgba(138, 138, 138, 0.8);
+    color: rgb(255, 255, 255);
+}
+
+.comprar-ahora:hover{
+    cursor: pointer;
+    background-color: rgba(138, 138, 138, 0.6);
+}
+
+/*PRODUCTOS*/
+.productos{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.productos h3{
+    font-size: 4rem;
+    height: 20vh;
+    margin-top: 20px;
+}
+.imagenes{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+.imagenes img{
+    height: 420px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.img-content{
+   position: absolute;
+    top: 32;
+    /*left: 20;*/
+    opacity: 0;
+    width: 400px;
+    height: 420px;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    transition: opacity 0.30s;
+    border-radius: 10px;
+}
+.img-content a{
+    color: white;
+    text-decoration: none;
+}
+.img-content > * {
+    transform: translateY(20px);
+    transition: transform 0.30s;
+}
+
+.img-content:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.img-content:hover > *{
+    transform: translateY(0);
+}
+.img-title{
+    font-size: 2rem;
+}
+.img-description{
+    margin: 40px;
+}
+
+/*CONTACTO*/
+.contacto{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contacto h3{
+    font-size: 4rem;
+    height: 20vh;
+    margin-top: 20px;
+}
+
+.contact-us{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+.description-p{
+    width: 40vw;
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+    margin: 0 70px 0 50px;
+    text-align: center;
+}
+
+.form-contact{
+    width: 40vw;
+   /* display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 10px 100px 0px 30px;
+    flex-direction: column;*/
+    margin: 0px;
+}
+
+.datos{
+    font-size: 1.2rem;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+span{
+    font-weight: bold;
+}
+
+.datos img{
+    height: 30px;
+    width: 30px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+}
+
+.redes a{
+    margin: 20px 30px 0 30px;
+}
+
+.datos-cliente{
+    width: 35vw;
+    display: flex;
+    align-items: left;
+    margin: 0px 100px 0px 30px;
+    flex-direction: column;
+}
+
+.datos-cliente input{
+    padding: 10px;
+    margin: 5px 0 20px 0;
+}
+
+.motivo-options{
+    margin-bottom: 20px;
+}
+textarea{
+    margin-bottom: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 5px 10px;
+}
+
+input[type="radio"]:first-child{
+    margin: 0 10px 0 0;
+}
+input[type="radio"]{
+    margin: 0 8px 0 30px;
+}
+
+.enviar-msj{
+    width: 40%;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(84, 230, 132, 0.3);
+}
+
+.enviar-msj:hover{
+    cursor: pointer;
+    background-color: rgba(180, 180, 180, 0.5);
+}
+
+footer{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(84, 230, 132, 0.2);
+}
+.info-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.section-footer{
+    padding: 20px;
+    line-height: 30px;
+    margin: 0 30px 0 30px;
+}
+
+.center{
+    text-align: center;
+}
+
+.section-footer a{
+    margin: 0 10px 0 10px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.section-footer a:hover{
+    color: #000;
+}
+
+.section-footer a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -3px;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.section-footer a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.line{
+    background-color: black;
+    width: 100%;
+    height: 1px;
+}
+
+.copyright{
+    margin: 20px 0 10px 0;
+}
+
+/*PRODUCTOS*/
+.header-productos{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: url("/DeciloConFlores/images/annie-spratt-hX_hf2lPpUU-unsplash.jpg");
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+}
+
+.header-productos .content-header h2{
+    color: black;
+}
+
+#flores{
+    height: 250vh;
+    width: 100%;
+}
+#flores h3{
+    font-size: 3rem;
+    text-align: center;
+    margin: 25px 0;
+}
+.items-productos{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.items-productos img{
+    height: 400px;
+    width: 300px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.items-productos img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+
+}
+.item{
+    margin: 10px 50px 90px 50px;
+}
