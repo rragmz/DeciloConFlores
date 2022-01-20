@@ -10,8 +10,14 @@ html{
 body{
     font-family: 'Montserrat', sans-serif;
 }
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -22,11 +28,12 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
-    background: url("/DeciloConFlores/images/flowers.jpg");
+    background: url("https://images.unsplash.com/photo-1476293889456-abfb7492a29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
     background-size: cover;
     background-position-y: center;
     background-position-x: center;
 }
+
 .header-nav{
     height: 20vh;
     width: 100%;
@@ -106,9 +113,9 @@ li a:hover:before {
 .content-header{
     height: 80vh;
     width: 100%;
-    display: flex;
+    /*display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
     flex-direction: column;
 }
 
@@ -123,10 +130,13 @@ li a:hover:before {
 
 .comprar-ahora{
     font-family: 'Montserrat', sans-serif;
-    width: 220px;
-    height: 55px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 200px;
+    height: 50px;
     border: none;
-    padding: 15px;
+    text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 5px;
@@ -163,9 +173,10 @@ li a:hover:before {
     flex-direction: row;
     position: relative;
 }
+
 .imagenes img{
     height: 420px;
-    width: 400px;
+    width: 350px;
     border-radius: 10px;
 }
 
@@ -174,13 +185,13 @@ li a:hover:before {
     top: 32;
     /*left: 20;*/
     opacity: 0;
-    width: 400px;
+    width: 350px;
     height: 420px;
     background: rgba(0, 0, 0, 0.4);
     color: white;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     text-align: center;
     flex-direction: column;
     transition: opacity 0.30s;
@@ -214,9 +225,9 @@ li a:hover:before {
 .contacto{
     height: 100vh;
     width: 100%;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     flex-direction: column;
 }
 
@@ -230,8 +241,6 @@ li a:hover:before {
     height: 80vh;
     width: 100%;
     display: flex;
-    /*justify-content: center;*/
-    /*align-items: center;*/
 }
 
 .description-p{
@@ -245,20 +254,15 @@ li a:hover:before {
 
 .form-contact{
     width: 40vw;
-   /* display: flex;
-    justify-content: left;
-    align-items: left;
-    margin: 10px 100px 0px 30px;
-    flex-direction: column;*/
     margin: 0px;
 }
 
 .datos{
     font-size: 1.2rem;
     margin: 50px;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     flex-direction: column;
 }
 
@@ -397,26 +401,53 @@ footer{
     height: 100vh;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    background: url("/DeciloConFlores/images/annie-spratt-hX_hf2lPpUU-unsplash.jpg");
+    background: url("https://images.unsplash.com/photo-1477554193778-9562c28588c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
     background-size: cover;
     background-position-y: center;
     background-position-x: center;
 }
 
 .header-productos .content-header h2{
-    color: black;
+    color: white;
 }
 
 #flores{
-    height: 250vh;
+    height: 300vh;
     width: 100%;
+    margin: 2rem 0 1rem 0;
 }
+#plantas{
+    height: 300vh;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#giftcard{
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
 #flores h3{
     font-size: 3rem;
     text-align: center;
-    margin: 25px 0;
+    margin: 0 0 3rem 0;
 }
+
+#plantas h3{
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 0 3rem 0;
+}
+
+#giftcard h3{
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 0 3rem;
+}
+
 .items-productos{
     width: 100%;
     display: flex;
@@ -432,11 +463,139 @@ footer{
     border-radius: 10px;
 }
 
-.items-productos img:hover{
-    opacity: 0.8;
-    cursor: pointer;
-
-}
 .item{
-    margin: 10px 50px 90px 50px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 50px 8rem 50px;
+}
+
+.item-presentation{
+    margin-bottom: 10px;
+    position: relative;
+    height: 400px;
+    width: 300px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.item-presentation .item-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    height: 400px;
+    width: 300px;
+    color: white;
+    font-size: 1.5rem;
+    transition: all 300ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.item-presentation:hover > .item-content{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*LOGIN*/
+.grey{
+    background-color: rgb(241, 241, 241);
+}
+.container .login{
+    height: 80%;
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgb(199, 199, 199);
+}
+
+.container .login .registration{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .login .registration h2{
+    margin: 30px 0px 40px 20px;
+}
+
+.container .login .registration .info{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.container .login .registration .input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 10px 0px 10px 0px;
+    border-bottom: 1px rgb(77, 77, 77) solid;
+}
+
+.container .login .registration .input img{
+    height: 30px;
+    width: 30px;
+}
+
+.container .login .registration .input input{
+    width: 70%;
+    height: 40px;
+    border: none;
+    margin: 0 0 0 20px;
+}
+
+.container .login .imagen{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background: url("/DeciloConFlores/images/login.jpg");
+    background-size: cover;
+    border-radius: 0 20px 20px 0;
+}
+
+.container .login .registration .info .forgot-password{
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.7rem;
+    margin-top: 5px;
+    color: grey;
+}
+
+.container .login .registration .btn-login{
+    width: 80%;
+    height: 35px;
+    margin: 15px 0;
+    border: none;
+    background-color: rgb(108, 165, 108);
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 10px;
+}
+
+.container .login .registration .btn-login:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px rgb(199, 199, 199);
+}
+
+.container .login .registration p{
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+.container .login .registration p a{
+    text-decoration: none;
+    color: yellowgreen;
 }
