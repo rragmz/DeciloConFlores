@@ -717,7 +717,7 @@ footer {
     
     /*Productos -Home*/
     #productos{
-      height: 120vh;
+      height: 135vh;
     }
     .productos h2{
       height: 10vh;
@@ -725,7 +725,7 @@ footer {
     .productos .imagenes{
       align-items: center;
       flex-direction: column;
-      height: 110vh;
+      height: 125vh;
     }
     .img-content.flex-center a{
       display: flex;
@@ -734,7 +734,7 @@ footer {
 
     /*Contacto*/
     #contacto{
-      height: 80vh;
+      height: 100vh;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -745,7 +745,7 @@ footer {
       margin-bottom: 20px;
     }
     .contact-us{
-      height: 70vh;
+      height: 90vh;
       width: 100%;
       display: flex;
       flex-direction: column;
