@@ -785,7 +785,8 @@ footer {
   /*Container login-signup*/
   .container .login{
       width: 75%;
-      height: 90%;
+      height: 80vh;
+      margin: 10px;
   }
 
 
@@ -795,7 +796,7 @@ footer {
   }
   .container .login .registration{
     width: 70%;
-    height: 80%;
+    height: 80vh;
   }
   .container .login .imagen{
     width: 45%;
@@ -859,7 +860,7 @@ footer {
     
     /*Productos -Home*/
     #productos{
-      height: 135vh;
+      height: 250vh;
     }
     .productos h2{
       height: 10vh;
@@ -867,8 +868,9 @@ footer {
     .productos .imagenes{
       align-items: center;
       flex-direction: column;
-      height: 125vh;
+      height: 250vh;
     }
+
     .img-content.flex-center a{
       display: flex;
       flex-direction: column;
@@ -876,7 +878,7 @@ footer {
 
     /*Contacto*/
     #contacto{
-      height: 100vh;
+      height: 200vh;
       flex-direction: column;
     }
     .contacto.flex-center h3{
@@ -885,7 +887,7 @@ footer {
       margin-bottom: 20px;
     }
     .contact-us{
-      height: 90vh;
+      height: 100%;
       width: 100%;
       flex-direction: column;
       align-items: center;
