@@ -794,7 +794,8 @@ footer {
     width: 10px;
   }
   .container .login .registration{
-      width: 55%;
+    width: 70%;
+    height: 80%;
   }
   .container .login .imagen{
     width: 45%;
@@ -968,9 +969,10 @@ footer {
     .container .login{
       flex-direction: column;
       width: 90%;
+      height: 80%;
     }
     .login .registration{
-      width: 50%;
+      width: 60%;
     }
     .login .registration .info{
       width: 100%;
