@@ -736,8 +736,6 @@ footer {
     #contacto{
       height: 100vh;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
     }
     .contacto.flex-center h3{
       height: 10vh;
@@ -747,9 +745,7 @@ footer {
     .contact-us{
       height: 90vh;
       width: 100%;
-      display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
       margin: 0 0 0 20px;
     }
@@ -813,6 +809,22 @@ footer {
       padding: 0;
     }
 
+    /*PRODUCTOS -Page*/
+    #flores{
+      height: 1500vh;
+    }
+    .items-productos{
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    #plantas{
+      height: 1500vh;
+    }
+
+    #giftcard{
+      height: 300vh;
+    }
   }
 
 /*Tableta*/
