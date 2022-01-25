@@ -810,20 +810,17 @@ footer {
     }
 
     /*PRODUCTOS -Page*/
-    #flores{
-      height: 1500vh;
+    #title-products{
+        margin: 100px 20px 30px 20px;
     }
-    .items-productos{
-      flex-direction: column;
-      flex-wrap: wrap;
+    section#flores{
+      height: 900vh;
     }
-
-    #plantas{
-      height: 1500vh;
+    section#plantas{
+      height: 900vh;
     }
-
-    #giftcard{
-      height: 300vh;
+    section#giftcard{
+      height: 320vh;
     }
   }
 
