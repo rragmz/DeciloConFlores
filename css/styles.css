@@ -185,7 +185,7 @@ h1:hover {
   height: 20vh;
   margin-top: 20px;
 }
-.imagenes {
+/* .imagenes {
   height: 80vh;
   width: 100%;
   display: flex;
@@ -204,15 +204,15 @@ h1:hover {
 .img-content {
   position: absolute;
   top: 32;
-  /*left: 20;*/
+  /*left: 20;
   opacity: 0;
   width: 350px;
   height: 420px;
   background: rgba(0, 0, 0, 0.4);
   color: white;
-  /* display: flex;
+  display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
   text-align: center;
   flex-direction: column;
   transition: opacity 0.3s;
@@ -240,6 +240,75 @@ h1:hover {
 }
 .img-description {
   margin: 40px;
+}*/
+div.items-productos-home{
+  height: 300vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item-pr-home{
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen{
+  width: 300px;
+  height: 400px;
+}
+.img-content-home{
+margin-bottom: 10px;
+position: relative;
+height: 400px;
+width: 300px;
+overflow: hidden;
+border-radius: 10px;
+}
+
+.img-content-home .img-details-home{
+/*display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;*/
+position: absolute;
+top: 0;
+height: 400px;
+width: 300px;
+transition: all 300ms ease-out;
+opacity: 0;
+visibility: hidden;
+background: rgba(0, 0, 0, 0.3);
+border-radius: 10px;
+}
+
+.img-content-home:hover > .img-details-home {
+  opacity: 1;
+  visibility: visible;
+}
+
+.img-details-home a{
+  height: 400px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-decoration: none;
+}
+.img-details-home a h4{
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+}
+.img-content-home p{
+  width: 80%;
+  text-align: center;
+  font-size: 1.1rem;
 }
 
 /*CONTACTO*/
@@ -684,18 +753,14 @@ footer {
       font-size: 0.9rem;
   }
   /*Productos-Home*/
+  .container #productos{
+    height: 300vh;
+  }
   .container .productos h3{
       font-size: 3.5rem;
   }
-  .container .productos .imagenes img {
-    width: 220px;
-    height: 300px;
-  }
-
-  .container .productos .imagenes .img-content {
-    top: 9px;
-    width: 220px;
-    height: 300px;
+  .container #productos .items-productos-home{
+    flex-direction: column;
   }
 
   /*Contacto*/
@@ -814,7 +879,7 @@ footer {
 }
 
 /*Celular L*/
-@media (max-width: 425px) {
+@media (max-width: 767px) {
     .header-nav{
         height: 28vh;
     }
@@ -860,7 +925,7 @@ footer {
     
     /*Productos -Home*/
     #productos{
-      height: 250vh;
+      height: 220vh;
     }
     .productos h2{
       height: 10vh;
@@ -868,14 +933,14 @@ footer {
     .productos .imagenes{
       align-items: center;
       flex-direction: column;
-      height: 250vh;
+      height: 220vh;
     }
 
     .img-content.flex-center a{
       display: flex;
       flex-direction: column;
     }
-
+    
     /*Contacto*/
     #contacto{
       height: 200vh;
@@ -993,6 +1058,16 @@ footer {
     }
   }
 
-
+@media (max-width: 380px){
+  .nav-bar h1{
+    margin-left: 10px;
+  }
+  #productos h3{
+    font-size: 2.8rem;
+  }
+  #contacto h3{
+    font-size: 2.8rem;
+  }
+}
 @media (max-width: 1024px){
 }
