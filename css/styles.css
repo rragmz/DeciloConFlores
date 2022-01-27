@@ -834,7 +834,9 @@ footer {
     .change{
         display: none;
     }
-
+    .ul-responsive li{
+      margin: 8px;
+    }
     .change:checked ~ ul{
         display: inline-block;
         text-align: right;
