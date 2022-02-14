@@ -1161,27 +1161,32 @@ footer {
     } 
 
     /*Landing*/
+    .landing{
+      align-items: center;
+      justify-content: center;
+    }
     .card{
       flex-direction: column;
-      height: 100vh;
+     height: 130vh;
       width: 90%;
       margin: 20px 0;
+      box-shadow: none;
     }
     .card img{
-      height: 400px;
+      height: 50vh;
       width: 300px;
     }
     .card .details{
       width: 80%;
       margin: 10px 0;
-      height: 10rem;
+      height: 100vh;
     }
 
     .card h4{
       width: 100%;
     }
-    .card .div-cantidad{
-      width: 100%;
+    .card .details .div-cantidad{
+      width: 150px;
     }
     /*LOGIN*/
     .container .login{
