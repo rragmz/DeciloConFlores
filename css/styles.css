@@ -1065,6 +1065,7 @@ footer {
     #contacto{
       height: 200vh;
       flex-direction: column;
+      margin-bottom: 20px;
     }
     .contacto.flex-center h3{
       height: 10vh;
