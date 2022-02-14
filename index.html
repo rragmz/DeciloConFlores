@@ -104,10 +104,19 @@
                         <label for="mail">Correo electrónico *</label>
                         <input type="email" name="name" placeholder="Ingresá tu mail">
                         <label for="motivo">Motivo *</label>
-                        <div class="motivo-options">
-                            <input type="radio" name="motivo" value="presupuesto">Presupuesto
-                            <input type="radio" name="motivo" value="visita">Visita
-                            <input type="radio" name="motivo" value="otros">Otros
+                        <div class="motivo-options radio-group">
+                            <label class="radio">
+                                <input type="radio" name="motivo" value="presupuesto">Presupuesto
+                                <span></span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="motivo" value="visita">Visita
+                                <span></span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="motivo" value="otros">Otros
+                                <span></span>
+                            </label>
                         </div>
                         <label for="msj">Mensaje</label>
                         <textarea name="msj" id="msj" cols="30" rows="7" placeholder="Ingresá tu mensaje"></textarea>
@@ -120,20 +129,24 @@
             <div class="info-footer">
                 <div class="section-footer">
                     <h3>Zophilli</h3>
-                    <p>Calle 123</p>
-                    <p>Buenos Aires, Argentina</p>
+                    <div class="datos-footer">
+                        <p>Calle 123</p>
+                        <p>Buenos Aires, Argentina</p>
+                    </div>
                 </div>
                 <div class="section-footer center">
                     <h4>Sobre Zophilli</h4>
-                    <a href="#productos">Productos</a>
-                    <a href="#contacto">Contacto</a>
-                    <a href="login.html">Inicia sesión</a>
+                    <div class="datos-footer">
+                        <a href="#productos">Productos</a>
+                        <a href="#contacto">Contacto</a>
+                        <a href="login.html">Inicia sesión</a>
+                    </div>
                 </div> 
             </div>
             <div class="line">
             </div>
             <div class="copyright">
-                <p>Copyright © 2022 All Rights Reserved by <span>Rocío Gómez</span></p>
+                <p>Hecho por <span>Rocío Gómez</span></p>
             </div>
         </footer>
     </div>

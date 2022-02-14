@@ -32,6 +32,7 @@ body {
   background-size: cover;
   background-position-y: center;
   background-position-x: center;
+  background-attachment: fixed;
 }
 
 .header-nav {
@@ -40,7 +41,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(32, 32, 32, 0.3);
+  background-color: rgba(32, 32, 32, 0.2);
 }
 
 .nav-bar {
@@ -163,6 +164,7 @@ h1:hover {
   border-radius: 5px;
   background-color: rgba(138, 138, 138, 0.8);
   color: rgb(255, 255, 255);
+  transition: 0.3s ease-in;
 }
 
 .comprar-ahora:hover {
@@ -324,21 +326,58 @@ span {
 }
 
 .motivo-options {
-  margin-bottom: 20px;
+  margin: 5px 0 20px 0;
+  display: flex;
 }
+.motivo-options label{
+  margin: 0 30px;
+  display: block;
+}
+
+.radio input[type="radio"]{
+  display: none;
+}
+.radio {
+  position: relative;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.radio span{
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid rgba(84, 230, 132, 0.5);
+  position: absolute;
+  display: block;
+  left: -30px;
+  top: 0px;
+}
+
+.radio span:after{
+  content: "";
+  height: 10px;
+  width: 10px;
+  background: rgba(84, 230, 132, 0.5);
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  left: 3px;
+  top: 3px;
+  transform: translate(-4%, -4%) scale(0);
+  transition: 300ms ease-in-out 0s;
+}
+
+.radio input[type="radio"]:checked ~ span:after{
+  transform: translate(-4%, -4%) scale(1);
+}
+
 textarea {
-  margin-bottom: 20px;
+  margin: 5px 0 20px 0;
   font-family: Arial, Helvetica, sans-serif;
   padding: 5px 10px;
   outline: none;
 }
 
-input[type="radio"]:first-child {
-  margin: 0 10px 0 0;
-}
-input[type="radio"] {
-  margin: 0 8px 0 30px;
-}
 
 .enviar-msj {
   width: 40%;
@@ -348,6 +387,7 @@ input[type="radio"] {
   border-radius: 10px;
   padding: 10px;
   background-color: rgba(84, 230, 132, 0.3);
+  transition: 0.3s ease-in;
 }
 
 .enviar-msj:hover {
@@ -434,6 +474,7 @@ footer {
   background-size: cover;
   background-position-y: center;
   background-position-x: center;
+  background-attachment: fixed;
 }
 
 .header-productos .content-header h2 {
@@ -526,9 +567,13 @@ footer {
   visibility: visible;
 }
 
+.item-content a{
+  color: white;
+  text-decoration: none;
+}
 /*LOGIN*/
 .grey {
-  background-color: rgb(241, 241, 241);
+  background-color: rgb(243, 243, 243);
 }
 .container .login {
   height: 80%;
@@ -606,6 +651,7 @@ footer {
   color: white;
   font-size: 0.9rem;
   border-radius: 10px;
+  transition: 0.2s ease-in;
 }
 
 .container .login .registration .btn-login:hover {
@@ -662,6 +708,7 @@ footer {
   color: white;
   font-size: 0.9rem;
   border-radius: 10px;
+  transition: 0.2s ease-in;
 }
 
 .container .login .registration .btn-signup:hover {
@@ -669,6 +716,126 @@ footer {
   box-shadow: 2px 2px 2px rgb(199, 199, 199);
 }
 
+/*LANDING PRODUCTOS*/
+.header-landing-productos{
+  background-color: rgba(163, 255, 194, 0.9);
+}
+
+.landing{
+  width: 100%;
+  height: 100%;
+  background: url("/DeciloConFlores/images/annie-spratt-hX_hf2lPpUU-unsplash.jpg");
+}
+
+.card{
+  height: 75vh;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  margin-left: 15%;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(221, 255, 220, 0.2);
+}
+.card .img{
+  overflow: hidden;
+  border-radius: 20px;
+  height: 60vh;
+  width: 300px;
+}
+.card img{
+  width: 300px;
+  transition: 0.5s all ease-in-out;
+  margin: 0 auto;
+}
+
+.card img:hover{
+  transform: scale(1.8);
+}
+
+.card .details{
+  height: 100%;
+  width: 50%;
+  margin-left: 30px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card .details h4{
+  font-size: 2.5rem;
+  margin: 50px 20px 20px;
+}
+.card .details .price{
+  font-size: 1.2rem;
+}
+
+.card .details .item-detail{
+  font-size: 1.2rem;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.card .details .div-cantidad{
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  margin-top: 20px;
+}
+
+.card .details .div-cantidad label{
+  font-size: 1.1rem;
+  margin-right: 20px;
+}
+
+.card .details .div-cantidad select{
+  width: 80%;
+}
+.card .details .div-cantidad select option{
+  text-align: center;
+
+}
+
+.card .details .agregar{
+  margin-top: 60px;
+  font-size: 1.1rem;
+  padding: 10px 30px;
+  border: 1px solid rgba(84, 230, 132, 0.5);
+  color: black;
+  background-color: rgba(84, 230, 132, 0.3);
+  border-radius: 10px;
+  transition: 0.3s ease-out;
+  position: relative;
+  z-index: 1;
+}
+
+.card .details .agregar:hover{
+  color: white;
+  cursor: pointer;
+}
+
+.card .details .agregar:before{
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: rgba(69, 189, 109,0.6);
+  border-radius: 10px;
+}
+.card .details .agregar:hover:before{
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
 /*MEDIA QUERIES*/
 
 
@@ -942,24 +1109,31 @@ footer {
     }
 
     footer{
-      height: 70vh;
+      height: 40vh;
       width: 100%;
     }
     .info-footer{
       width: 100%;
-      height: 50vh;
+      height: 40vh;
+      flex-direction: column;
     }
     .info-footer .section-footer{
-      width: 50%;
-      margin: 20px 20px;
+      width: 100%;
       padding: 0;
     }
+    .info-footer .section-footer h3{
+      text-align: center;
+    }
     .info-footer .section-footer.center{
-      width: 50%;
-      margin: 20px 0;
+      width: 100%;
+      margin: 10px 0;
       padding: 0;
+    }
+    .datos-footer{
       display: flex;
-      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-direction: row;
     }
     .info-footer .section-footer.center a{
       height: 20px;
@@ -969,6 +1143,7 @@ footer {
     }
     .copyright{
       padding: 0;
+      text-align: center;
     }
 
     /*PRODUCTOS -Page*/
@@ -985,6 +1160,29 @@ footer {
       height: 320vh;
     } 
 
+    /*Landing*/
+    .card{
+      flex-direction: column;
+      height: 100vh;
+      width: 90%;
+      margin: 20px 0;
+    }
+    .card img{
+      height: 400px;
+      width: 300px;
+    }
+    .card .details{
+      width: 80%;
+      margin: 10px 0;
+      height: 10rem;
+    }
+
+    .card h4{
+      width: 100%;
+    }
+    .card .div-cantidad{
+      width: 100%;
+    }
     /*LOGIN*/
     .container .login{
       flex-direction: column;
